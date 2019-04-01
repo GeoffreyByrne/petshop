@@ -25,7 +25,7 @@ class Order
     /**
      * @var integer
      *
-     * @ORM\Column(name="pet_id", type="int")
+     * @ORM\Column(name="pet_id", type="integer")
      * @ORM\OneToMany(targetEntity="PetBundle\Entity\Pet")
      * @ORM\JoinColumn(name="pet_id", referencedColumnName="id")
      */
@@ -34,7 +34,7 @@ class Order
     /**
      * @var integer
      *
-     * @ORM\Column(name="quantity", type="int")
+     * @ORM\Column(name="quantity", type="integer")
      */
     private $quantity;
 
@@ -48,7 +48,7 @@ class Order
     /**
      * @var string
      *
-     * @ORM\Column(name="status", type="string", length="15")
+     * @ORM\Column(name="status", type="string", length=15)
      */
     private $status;
 

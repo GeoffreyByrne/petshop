@@ -25,7 +25,7 @@ class Pet
     /**
      * @var integer
      *
-     * @ORM\Column(name="name", type="int")
+     * @ORM\Column(name="name", type="integer")
      * @ORM\OneToMany(targetEntity="PetBundle\Entity\Category")
      * @ORM\JoinColumn(name="category", referencedColumnName="id")
      */
@@ -76,6 +76,98 @@ class Pet
         $this->id = $id;
         return $this;
     }
+
+    /**
+     * @return int
+     */
+    public function getCategory(): int
+    {
+        return $this->category;
+    }
+
+    /**
+     * @param int $category
+     * @return Pet
+     */
+    public function setCategory(int $category): Pet
+    {
+        $this->category = $category;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPetName(): string
+    {
+        return $this->petName;
+    }
+
+    /**
+     * @param string $petName
+     * @return Pet
+     */
+    public function setPetName(string $petName): Pet
+    {
+        $this->petName = $petName;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPhotoUrls(): string
+    {
+        return $this->photoUrls;
+    }
+
+    /**
+     * @param string $photoUrls
+     * @return Pet
+     */
+    public function setPhotoUrls(string $photoUrls): Pet
+    {
+        $this->photoUrls = $photoUrls;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTags(): string
+    {
+        return $this->tags;
+    }
+
+    /**
+     * @param string $tags
+     * @return Pet
+     */
+    public function setTags(string $tags): Pet
+    {
+        $this->tags = $tags;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param string $status
+     * @return Pet
+     */
+    public function setStatus(string $status): Pet
+    {
+        $this->status = $status;
+        return $this;
+    }
+
+
 
 
 }
