@@ -4,11 +4,15 @@ This is a working Smyfony 3.1 version of the petshop API spec [Based on https://
 
 The only endpoint that is finished is the /pet endpoint. The code for that can be found in petshop/src/PetBundle/Controller/DefaultController
 
+The rest of tne endpoints for the PetBundle are mapped out with their respective methods. But not implemented. 
+
 There are 3 bundles breaking the example up into 3 micro services. PetBundle, for handling all the pets. StoreBundle for handling all the orders, UserBundle for managing users and their accounts.
 
 Each Bundle has had their Entity's created. And can be found in petshop/src/*Bundle/Entity
 
 These are using Doctrine ORM and will handle most types of calls related to database operations, particularly CRUD.
+
+
 
 ## Database DDL's.
 
