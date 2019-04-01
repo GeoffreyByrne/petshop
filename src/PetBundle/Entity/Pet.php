@@ -59,5 +59,23 @@ class Pet
      */
     private $status;
 
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return Pet
+     */
+    public function setId(int $id): Pet
+    {
+        $this->id = $id;
+        return $this;
+    }
+
 
 }
