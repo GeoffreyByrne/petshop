@@ -1,3 +1,18 @@
+user:
+    resource: "@UserBundle/Controller/"
+    type:     annotation
+    prefix:   /user
+
+store:
+    resource: "@StoreBundle/Controller/"
+    type:     annotation
+    prefix:   /store
+
+pet:
+    resource: "@PetBundle/Controller/"
+    type:     annotation
+    prefix:   /pet
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
