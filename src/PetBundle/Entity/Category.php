@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 
 /**
- * Country
+ * Category
  *
  * @ORM\Table(name="category")
  * @ORM\Entity(repositoryClass="PetBundle\Repository\CategoryRepository")

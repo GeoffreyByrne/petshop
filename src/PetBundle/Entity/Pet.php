@@ -6,9 +6,9 @@ namespace PetBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Country
+ * pet
  *
- * @ORM\Table(name="category")
+ * @ORM\Table(name="pet")
  * @ORM\Entity(repositoryClass="PetBundle\Repository\PetRepository")
  */
 class Pet

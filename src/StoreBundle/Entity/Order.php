@@ -6,9 +6,9 @@ namespace StoreBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Country
+ * Order
  *
- * @ORM\Table(name="Order")
+ * @ORM\Table(name="order")
  * @ORM\Entity(repositoryClass="StoreBundle\Repository\OrderRepository")
  */
 class Order
